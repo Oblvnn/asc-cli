@@ -1,0 +1,20 @@
+{
+  "name": "asc-cli",
+  "version": "1.0.0",
+  "preferGlobal": true,
+  "bin": {
+    "asc": "index.js"
+  },
+  "description": "Anime search CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OblivionSan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "figlet": "^1.2.0",
+    "malapi": "0.0.3"
+  }
+}
