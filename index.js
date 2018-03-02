@@ -34,7 +34,7 @@ function run() {
             log(`${chalk.green.bold('STATUS')}     : ${anime.status}`);
             log(`${chalk.green.bold('RATING')}     : ${anime.statistics.score.value}`);
             log(`${chalk.green.bold('RANKED')}     : ${anime.statistics.ranking}`);
-            log(`${chalk.green.bold('POPULARITY')} : ${anime.statistics.ranking}`);
+            log(`${chalk.green.bold('POPULARITY')} : ${anime.statistics.popularity}`);
             log(`${chalk.green.bold(anime.studios.length === 1 ? 'STUDIO     ' : 'STUDIOS    ')}: ${anime.studios.join(', ').replace('       ', '')}`);
             log(`${chalk.green.bold('AIRED_DATE')} : ${anime.aired}`);
             log(`\n${chalk.green.bold('SYNOPSIS')}   :\n${anime.synopsis}`);
