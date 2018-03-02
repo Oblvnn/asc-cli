@@ -7,7 +7,12 @@
 
 ```
 
-<p align="center">A simple Anime Search Command-line interface by <a href="https://oblivionsan.tk">Oblivion サン</a></p>
+<p align="center">
+A simple Anime Search Command-line interface by <a href="https://oblivionsan.tk">Oblivion サン</a>
+</p>
+<p align="center">
+<a href="https://nodei.co/npm/asc-cli/"><img src="https://nodei.co/npm/asc-cli.png"></a>
+</p>
 
 ## Main Features
   - Currently only searches anime. (manga soon maybe??)
@@ -18,6 +23,7 @@
   - First install [Node.JS](https://nodejs.org/en/)
   - Then install the cli by typing in terminal `npm install -g asc-cli`
   - Usage: `>asc <anime_name> ~ example: >asc Noragami`
+  - Typing `>asc -h or -help` will also bring up the usage.
 
 ## Useful Links
   - Support Server ~ [discord.oblivionsan.tk](https://discord.oblivionsan.tk)

@@ -8,7 +8,23 @@ const figlet = require('figlet');
 //Customs
 const log = console.log;
 const mainTitle = figlet.textSync('ASC - cli', { horizontalLayout: 'full' });
-const suffix = process.argv.slice(2).join('+');
+var suffix = process.argv.slice(2).join('+');
+
+if (suffix.includes('-h' || '-help')) {
+    log(chalk.cyan(`USAGE: >asc <anime_name> ~ example: ${chalk.underline('>asc Noragami')}`));
+    process.exit();
+}
+
+if (!suffix) {
+    log(chalk.red('ASC ERROR: Didn\'t provide a valid search term.'));
+    log(chalk.cyan(`USAGE: >asc <anime_name> ~ example: ${chalk.underline('>asc Noragami')}`));
+    process.exit();
+}
+
+process.on('unhandledRejection', (err) => {
+    log(chalk.red(`ASC ERROR: an error occurred while searching for: ${suffix}\nASC ERROR: ${err}`));
+    process.exit();
+});
 
 if (!module.parent) {
     run();
@@ -16,11 +32,6 @@ if (!module.parent) {
 
 function run() {
     try {
-        if (!suffix) {
-            log(chalk.red('ERROR: Didn\'t provide a valid search term.'));
-            log(chalk.cyan(`USAGE: >asc <anime_name> ~ example: ${chalk.underline('>asc Noragami')}`));
-            return process.exit();
-        }
         mal.fromName(suffix).then(anime => {
 
             log(chalk.yellowBright(mainTitle));
