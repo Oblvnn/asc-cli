@@ -20,7 +20,8 @@
   - Usage: `>asc <anime_name> ~ example: >asc Noragami`
 
 ## Useful Links
-- Support Server ~ [discord.oblivionsan.tk](https://discord.oblivionsan.tk)
+  - Support Server ~ [discord.oblivionsan.tk](https://discord.oblivionsan.tk)
+  - NPM Link ~ [asc-cli](https://www.npmjs.com/package/asc-cli)
 
 ## Usage example
 <p align="center"><a href="#"><img src="https://i.imgur.com/eIS8sN1.gif"/></a></p>
