@@ -1,6 +1,6 @@
 {
   "name": "asc-cli",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "preferGlobal": true,
   "bin": {
     "asc": "index.js"

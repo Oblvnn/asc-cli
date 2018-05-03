@@ -8,7 +8,7 @@
 ```
 
 <p align="center">
-A simple Anime Search Command-line interface by <a href="https://oblivionsan.tk">Oblivion サン</a>
+A simple Anime Search Command-line interface by <a href="https://oblivionsan.tk">Oblivion さん</a>
 </p>
 <p align="center">
 <a href="https://nodei.co/npm/asc-cli/"><img src="https://nodei.co/npm/asc-cli.png"></a>
